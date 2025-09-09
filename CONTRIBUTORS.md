@@ -769,6 +769,13 @@ Listed in alphabetical order.
     <td></td>
   </tr>
   <tr>
+    <td>DevForsure</td>
+    <td>
+      <a href="https://github.com/DevForsure">DevForsure</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Diane Chen</td>
     <td>
       <a href="https://github.com/purplediane">purplediane</a>
@@ -1266,6 +1273,13 @@ Listed in alphabetical order.
     <td>afrowave</td>
   </tr>
   <tr>
+    <td>jlitrell</td>
+    <td>
+      <a href="https://github.com/jlitrell">jlitrell</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
     <td>John</td>
     <td>
       <a href="https://github.com/thorrak">thorrak</a>
@@ -1511,6 +1525,13 @@ Listed in alphabetical order.
     <td></td>
   </tr>
   <tr>
+    <td>Lucas Klasa</td>
+    <td>
+      <a href="https://github.com/lucaskbr">lucaskbr</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Luis Nell</td>
     <td>
       <a href="https://github.com/originell">originell</a>
@@ -1591,6 +1612,13 @@ Listed in alphabetical order.
     <td>Martin Saizar</td>
     <td>
       <a href="https://github.com/msaizar">msaizar</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Martín Blech</td>
+    <td>
+      <a href="https://github.com/martinblech">martinblech</a>
     </td>
     <td></td>
   </tr>
@@ -1677,6 +1705,13 @@ Listed in alphabetical order.
       <a href="https://github.com/manonthemat">manonthemat</a>
     </td>
     <td>MatzeOne</td>
+  </tr>
+  <tr>
+    <td>Maurício Gioachini</td>
+    <td>
+      <a href="https://github.com/MauGx3">MauGx3</a>
+    </td>
+    <td></td>
   </tr>
   <tr>
     <td>Meghan Heintz</td>
@@ -2333,6 +2368,13 @@ Listed in alphabetical order.
     <td>villancikos</td>
     <td>
       <a href="https://github.com/villancikos">villancikos</a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Vincent Leduc</td>
+    <td>
+      <a href="https://github.com/leducvin">leducvin</a>
     </td>
     <td></td>
   </tr>
