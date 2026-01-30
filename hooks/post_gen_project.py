@@ -1,5 +1,6 @@
 # ruff: noqa: PLR0133
 import json
+import os
 import random
 import shutil
 import string
@@ -450,10 +451,11 @@ def main():  # noqa: C901, PLR0912, PLR0915
         if "{{ cookiecutter.keep_local_envs_in_vcs }}".lower() == "y":
             print(
                 INFO + ".env(s) are only utilized when Docker Compose and/or "
-                "Heroku support is enabled so keeping them does not make sense "
-                "given your current setup." + TERMINATOR,
+                "Heroku support is enabled. Keeping them as requested, but they may not be useful "
+                "in your current setup." + TERMINATOR,
             )
-        remove_envs_and_associated_files()
+        else:
+            remove_envs_and_associated_files()
     else:
         append_to_gitignore_file(".env")
         append_to_gitignore_file(".envs/*")
@@ -522,6 +524,7 @@ def setup_dependencies():
                 [  # noqa: S607
                     "docker",
                     "build",
+                    "--load",
                     "-t",
                     uv_image_tag,
                     "-f",
@@ -530,13 +533,18 @@ def setup_dependencies():
                     ".",
                 ],
                 check=True,
+                env={
+                    **os.environ,
+                    "DOCKER_BUILDKIT": "1",
+                },
             )
         except subprocess.CalledProcessError as e:
             print(f"Error building Docker image: {e}", file=sys.stderr)
             sys.exit(1)
 
+        current_path = Path.cwd().absolute()
         # Use Docker to run the uv command
-        uv_cmd = ["docker", "run", "--rm", "-v", ".:/app", uv_image_tag, "uv"]
+        uv_cmd = ["docker", "run", "--rm", "-v", f"{current_path}:/app", uv_image_tag, "uv"]
     else:
         # Use uv command directly
         uv_cmd = ["uv"]

@@ -19,8 +19,8 @@ production-ready Django projects quickly.
 
 ## Features
 
-- For Django 5.1
-- Works with Python 3.12
+- For Django 5.2
+- Works with Python 3.13
 - Renders Django projects with 100% starting test coverage
 - Twitter [Bootstrap](https://github.com/twbs/bootstrap) v5
 - [12-Factor](https://12factor.net) based settings via [django-environ](https://github.com/joke2k/django-environ)
@@ -51,7 +51,7 @@ _These features can be enabled during initial project setup._
 ## Constraints
 
 - Only maintained 3rd party libraries are used.
-- Uses PostgreSQL everywhere: 13 - 17 ([MySQL fork](https://github.com/mabdullahadeel/cookiecutter-django-mysql) also available).
+- Uses PostgreSQL everywhere: 14 - 18 ([MySQL fork](https://github.com/mabdullahadeel/cookiecutter-django-mysql) also available).
 - Environment variables for configuration (This won't work with Apache/mod_wsgi).
 
 ## Support this Project!
@@ -129,12 +129,12 @@ Answer the prompts with your own desired [options](http://cookiecutter-django.re
     Choose from 1, 2, 3 [1]: 1
     use_docker [n]: n
     Select postgresql_version:
-    1 - 17
-    2 - 16
-    3 - 15
-    4 - 14
-    5 - 13
-    Choose from 1, 2, 3, 4, 5 [1]: 1
+    1 - 18
+    2 - 17
+    3 - 16
+    4 - 15
+    5 - 14
+    Choose from 1, 2, 3, 4 [1]: 1
     Select cloud_provider:
     1 - AWS
     2 - GCP
